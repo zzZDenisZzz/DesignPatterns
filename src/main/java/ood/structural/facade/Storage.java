@@ -1,5 +1,8 @@
-package OOD.structural.facade;
+package ood.structural.facade;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Storage implements Order {
     int products;
 
@@ -8,6 +11,6 @@ public class Storage implements Order {
     }
 
     public void add() {
-        System.out.println("Заказ принял склад");
+        log.info("Заказ принял склад");
     }
 }
